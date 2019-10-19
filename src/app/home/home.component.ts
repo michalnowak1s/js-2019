@@ -8,24 +8,27 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   my_champion = 'Panteon!';
   user = 'Wu Xilao';
-  x = 10;
-
+  age = 10;
+  a=2;
+  b=3;
+  summ=;
+  sum(){ this.a+this.b;}
   constructor() { }
 
   ngOnInit() {
   }
 
-  increaseTemperature() {
-    this.x = this.x + 1;
-  }
 
-  decreaseTemperature() {
-    this.x = this.x - 1;
-  }
-
-  doIt() {
+  setNasus() {
     this.my_champion = 'Nasus';
   }
+      setKatarina() {
+    this.my_champion = 'Katarina';
+}
+    setAnivia(){
+    this.my_champion = 'Anivia';
+    }
+
 
   fff() {
 

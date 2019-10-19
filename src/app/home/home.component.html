@@ -1,5 +1,22 @@
 <div class="row no-gutters">
-  <div class="col-md-4 boxed"></div>
+  <div class="col-md-4 boxed">
+    <form>
+      <div class="form-group row">
+        <label for="userX" class="col-sm-4 col-form-label">a</label>
+        <div class="col-sm-8">
+          <input type="number" class="form-control" id="a" name="First_number" [(ngModel)]="a">
+        </div>
+        <div class="form-group row">
+          <label for="age" class="col-sm-4 col-form-label">b</label>
+          <div class="col-sm-8">
+            <input type="submit" (click)="sum()">
+            <input type="number" class="form-control" id="sum" name="Second_Number" placeholder="sum" [(ngModel)]="sum">
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
   <div class="col-md-4 text-center boxed" style="padding-top: 5%">
     <h1> Sunny day </h1>
     <img class="img-fluid" src="assets/mL.png">
@@ -9,18 +26,30 @@
 
   <div class="col-md-4 boxed p-1">
     <div class="card">
-      <div class="card-header"> header</div>
+      <div class="card-header"> </div>
       <div class="card-body">
-        champion: {{my_champion}}
+        <form>
+          <div class="form-group row">
+            <label for="userX" class="col-sm-4 col-form-label">User</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="userX" name="user" [(ngModel)]="user">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="age" class="col-sm-4 col-form-label">Age</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="age" name="age" placeholder="Age" [(ngModel)]="age">
+            </div>
+          </div>
+        </form>
       </div>
       <div class="card-footer">
-        <button class="btn btn-outline-info"
-                (click)="doIt()">Change champion
-        </button>
+        Current user:{{user}};
       </div>
 
     </div>
 
   </div>
 </div>
+
 
